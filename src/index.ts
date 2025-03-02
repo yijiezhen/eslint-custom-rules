@@ -92,6 +92,7 @@ import { omitIndexHtml } from './rules/omit-index-html';
 import { enforceIdCapitalization } from './rules/enforce-id-capitalization';
 import { noUnusedUseState } from './rules/no-unused-usestate';
 import { noUuidv4Base62AsKey } from './rules/no-uuidv4-base62-as-key';
+import { preferConsoleInfo } from './rules/prefer-console-info';
 
 module.exports = {
   meta: {
@@ -206,6 +207,7 @@ module.exports = {
         '@blumintinc/blumint/omit-index-html': 'error',
         '@blumintinc/blumint/enforce-id-capitalization': 'error',
         '@blumintinc/blumint/no-unused-usestate': 'error',
+        '@blumintinc/blumint/prefer-console-info': 'error',
       },
     },
   },
@@ -236,6 +238,7 @@ module.exports = {
     'no-unused-props': noUnusedProps,
     'no-useless-fragment': noUselessFragment,
     'no-uuidv4-base62-as-key': noUuidv4Base62AsKey,
+    'prefer-console-info': preferConsoleInfo,
     'prefer-fragment-shorthand': preferFragmentShorthand,
     'prefer-type-over-interface': preferTypeOverInterface,
     'require-memo': requireMemo,
